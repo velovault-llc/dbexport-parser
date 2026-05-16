@@ -1,0 +1,59 @@
+{
+  "name": "@velovault/dbexport-parser",
+  "version": "0.1.0",
+  "description": "TypeScript parser for Johnson Controls Metasys .dbexport archives.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.33.4",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velovault-llc/dbexport-parser.git"
+  },
+  "keywords": [
+    "metasys",
+    "johnson-controls",
+    "dbexport",
+    "bacnet",
+    "building-automation",
+    "hvac",
+    "parser"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
